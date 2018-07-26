@@ -8,6 +8,10 @@ function getRandomInt(max) {
 
 
 let keys = Object.keys(files)
+var index = keys.indexOf("Messing-With-Nostalgia");
+if (index > -1) {
+  keys.splice(index, 1);
+}
 let dir_size=keys.length;
 let key = keys[getRandomInt(dir_size)];
 let dir = files[key];
@@ -22,6 +26,9 @@ class Pictures extends Component {
   constructor(props){
     super(props);
     this.goTo=this.goTo.bind(this);
+    this.state={
+      width: window.innerWidth
+    }
   }
 
   goTo(index){
@@ -38,9 +45,13 @@ class Pictures extends Component {
         <div className="menucenter">
         <PicturesMenu goTo={this.goTo} series={series}/>
         </div>
-        <div className="twins">
-          <img className="img" src={require(`../media/${key}/${file}`)} alt="hi" />
-        </div>
+        {
+          this.state.width >= 400 && (
+            <div className="twins">
+              <img className="img" src={require(`../media/${key}/${file}`)} alt="hi" />
+            </div>
+          )
+        }
         </div>
       </div>
     );

@@ -27,9 +27,12 @@ class PicturesPage extends React.Component{
   render(){
     return(
       <div>
-        <span>{this.state.text}</span>
+        <div className="introtext">
+          <div className="textintro">{this.state.text}</div>
+        </div>
       <div className="imagecontainer">
 
+          <br/>
         <div className="imagesize">
         {
           this.state.Images.map((image,index)=>{

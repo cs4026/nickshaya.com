@@ -2,18 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
   font-family: AC;
   -webkit-text-stroke: 0.05em #FFD3E2;
   color: #FFFEF3;
   font-size: 1.8em;
 }
 
+iframe{
+  width:80%;
+}
+
 .AboutPage{
   height: 100%;
   -webkit-text-stroke: 0.05em #FFD3E2;
   color: #FFFEF3;
-  font-size: 3.5em;
+  font-size: 1.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +28,21 @@
 @font-face {
   font-family: AC;
   src: url(./fonts/AppleChancery.ttf);
+}
+
+
+.introtext{
+  -webkit-text-stroke: 0.05em #FFD3E2;
+  color: #FFFEF3;
+  font-size: 1.5em;
+  font-family: AC;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5em;
+}
+.textintro{
+  max-width: 70%;
 }
 .NavBar{
   -webkit-text-stroke: 0.05em #FFD3E2;
@@ -43,11 +62,15 @@
 .type:hover{
   cursor:pointer;
 }
-
+.app{height: 100%;}
+.everythingelse{height: 100%;}
 .App{
     height:100%;
     padding-left: 0.25em;
     font-family: AC;
+
+    display: flex;
+    align-items: center;
 }
 .left{
   padding-left: 0.25em;
@@ -58,9 +81,10 @@
   align-items: center;
 }
 .menucenter{
-  width: 70%;
+  width: 80%;
   display: flex;
   align-items: center;
+  margin-right:0.5em;
 }
 
 .twins{
@@ -83,23 +107,23 @@
 }
 .imagecontainer{
   display: flex;
-  flex-direction: row;
   align-content: center;
   justify-content: center;
 }
 .imagesize{
-    max-width: 28%;
+    max-width: 30%;
     min-width: 250px;
 }
 .img{
   align-self: flex-start;
   max-width: 100%;
-  max-height: 450px;
+  max-height: 500px;
   pointer-events: none;
+
 }
 
 .displayimg{
-  margin:0.5em;
+  margin-bottom:3em;
   width:100%;
   height:auto;
   pointer-events: none;
@@ -143,4 +167,25 @@ a{
     margin: 2em;
     align-items: center;
   }
+}
+
+@media (max-width: 400px){
+  .menu{
+    -webkit-text-stroke: 0.05em #FFD3E2;
+    color: #FFFEF3;
+    font-size: 6vw;
+    max-width: 100%;
+    white-space:nowrap;
+  }
+  .VideoPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: AC;
+    -webkit-text-stroke: 0.05em #FFD3E2;
+    font-size: 0px;
+    width:80%;
+  }
+
 }

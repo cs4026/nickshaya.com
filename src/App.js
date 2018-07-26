@@ -14,6 +14,10 @@ let menu = [
 ]
 
 let keys = Object.keys(files)
+var index = keys.indexOf("Messing-With-Nostalgia");
+if (index > -1) {
+  keys.splice(index, 1);
+}
 let dir_size=keys.length;
 let key = keys[getRandomInt(dir_size)];
 let dir = files[key];
@@ -39,7 +43,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <div className="left">
         <div className="menucenter">
         <MainMenu goTo={this.goTo} menu={menu}/>
