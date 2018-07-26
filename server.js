@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const compression = require('compression');
 const express = require('express');
 const path = require('path');
-let path = require('path');
 var proxy = require('redbird')({port: 80});
 const app = express();
 
