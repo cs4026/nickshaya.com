@@ -1,0 +1,11 @@
+body{
+  height: 100%;
+  margin: 0%;
+  background-color: #FFD3E2;
+}
+
+.father{
+  -webkit-text-stroke: 0.05em #FFFEF3;
+  color: #FFD3E2;
+  font-size: 4.167em;
+}

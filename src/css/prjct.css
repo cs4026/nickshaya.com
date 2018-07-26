@@ -1,0 +1,60 @@
+body{
+  height: 100%;
+  margin: 0%;
+  background-color: #FFD3E2;
+}
+.name{
+  -webkit-text-stroke: 0.05em #FFFEF3;
+  color: #FFD3E2;
+  font-size: 1.3em;
+  padding: 0.5em;
+  position: fixed;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tiny{
+  padding:1em;
+  width:36%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.img{
+  width: 100%;
+  height: auto;
+  padding-top: 2em;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
+  .tiny{
+    padding:1em;
+    width:80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .img{
+    width: 100%;
+    height: auto;
+    padding-top: 2em;
+  }
+}

@@ -1,0 +1,67 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/prjct.css' %}">
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <script type='text/javascript'>
+    DJANGO_STATIC_URL = '{{ STATIC_URL }}';
+     window.onload = function() {
+    /**
+      var myImage = new Image(100, 200);
+      myImage.src = `/static/{{name}}/{{photos}}`;
+      console.log("name",`static/{{name}}/{{photos}}`);
+      document.body.appendChild(myImage);
+
+
+      {% for photo in photos %}
+          var myImage = new Image(100, 200);
+          myImage.src = `/static/{{name}}/{{photo}}`;
+          document.body.appendChild(myImage);
+      {% endfor %}
+    **/
+    }
+    </script>
+    </head>
+    <title>
+      Nicholas Shaya - {{ name }}
+    </title>
+
+  <body>
+    <div class = "title">
+    <div class="name">
+      <a href="/">Nicholas Shaya </a>
+      /
+      <a href="/photos"> photos </a>
+       /
+       {{name}}
+    </div>
+  </div>
+  <div>
+  <div class="tiny">
+  {% for photo in photos %}
+  {% with name|add:"/"|add:photo as image_static %}
+
+  <img  class="img" src="{% static image_static %}" alt="sup"/><br>
+  {% endwith %}
+  {% endfor %}
+  </div>
+  </div>
+  </body>
+</html>
+
+<!--
+{% for photo in photos %}
+{% with name|add:"/"|add:photo as image_static %}
+
+<img  class="img" src="{% static image_static %}" alt="My image"/><br>
+{% endwith %}
+{% endfor %}
+
+<script type="text/jscript">
+  for(var i in name)
+    console.log("name",name)
+</script>
+{% with name|add:"/"|add:photos as i %}
+<img class="img" src="{% static i %}" alt="my_image"/>
+{%endwith%}
+-->

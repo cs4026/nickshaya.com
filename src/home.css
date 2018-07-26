@@ -1,0 +1,146 @@
+.VideoPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: AC;
+  -webkit-text-stroke: 0.05em #FFD3E2;
+  color: #FFFEF3;
+  font-size: 1.8em;
+}
+
+.AboutPage{
+  height: 100%;
+  -webkit-text-stroke: 0.05em #FFD3E2;
+  color: #FFFEF3;
+  font-size: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: AC;
+}
+
+
+@font-face {
+  font-family: AC;
+  src: url(./fonts/AppleChancery.ttf);
+}
+.NavBar{
+  -webkit-text-stroke: 0.05em #FFD3E2;
+  color: #FFFEF3;
+  font-size: 1.8em;
+  width: 100%;
+  height:5%;
+  padding-left: 0.25em;
+  padding-top: 0.25em;
+  font-family: AC;
+}
+
+.rootNav:hover{
+  cursor: pointer;
+}
+
+.type:hover{
+  cursor:pointer;
+}
+
+.App{
+    height:100%;
+    padding-left: 0.25em;
+    font-family: AC;
+}
+.left{
+  padding-left: 0.25em;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  margin-top:none;
+  align-items: center;
+}
+.menucenter{
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.twins{
+  width:100%;
+  height: auto;
+  display: flex;
+}
+
+.menu{
+  -webkit-text-stroke: 0.05em #FFD3E2;
+  color: #FFFEF3;
+  font-size: 1.8em;
+  max-width: 100%;
+  white-space:nowrap;
+}
+
+.choice:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.imagecontainer{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.imagesize{
+    max-width: 28%;
+    min-width: 250px;
+}
+.img{
+  align-self: flex-start;
+  max-width: 100%;
+  max-height: 450px;
+  pointer-events: none;
+}
+
+.displayimg{
+  margin:0.5em;
+  width:100%;
+  height:auto;
+  pointer-events: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 300px) {
+  .twins{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  .menucenter{
+    width: 100%;
+  }
+  .img{
+    width: auto;
+    max-width: 100%;
+    max-height: 400px;
+  }
+  .menu{
+    -webkit-text-stroke: 0.1em #FFFEF3;
+    color: #FFD3E2;
+    font-size: 25px;
+    max-width: 100%;
+    margin-right: 0.5em;
+    white-space:nowrap;
+  }
+  .left{
+    height: 90%;
+    display: flex;
+    margin: 2em;
+    align-items: center;
+  }
+}
