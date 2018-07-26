@@ -9,9 +9,6 @@
   font-size: 1.8em;
 }
 
-iframe{
-  width:80%;
-}
 
 .AboutPage{
   height: 100%;
@@ -185,7 +182,8 @@ a{
     font-family: AC;
     -webkit-text-stroke: 0.05em #FFD3E2;
     font-size: 0px;
-    width:80%;
   }
-
+  iframe{
+    width:100%;
+  }
 }
